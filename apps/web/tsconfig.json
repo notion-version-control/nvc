@@ -4,7 +4,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@workspace/ui/*": ["../../packages/ui/src/*"]
+      "@workspace/ui/*": ["../../packages/ui/src/*"],
+      "@workspace/api/supabase-server": ["../../packages/api/src/lib/supabase-ssr.ts"],
+      "@workspace/api/auth": ["../../packages/api/src/features/auth/index.ts"]
     },
     "plugins": [
       {
