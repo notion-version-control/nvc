@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.9.0",
     "@supabase/supabase-js": "^2.49.4"
   },
   "devDependencies": {
@@ -20,6 +21,8 @@
   },
   "exports": {
     "./users": "./src/features/users/index.ts",
-    "./pages": "./src/features/pages/index.ts"
+    "./pages": "./src/features/pages/index.ts",
+    "./supabase-server": "./src/lib/supabase-ssr.ts",
+    "./auth": "./src/features/auth/index.ts"
   }
 }
